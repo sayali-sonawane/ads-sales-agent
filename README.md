@@ -145,7 +145,7 @@ make lint
 
 ## License
 
-This project is licensed under the MIT License.
+This project is proprietary and not licensed under any open source license.
 
 ## Support
 
