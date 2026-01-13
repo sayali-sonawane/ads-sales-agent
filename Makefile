@@ -5,8 +5,8 @@ help:  ## Show this help message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
 install:  ## Install the package and all development dependencies
-	pip install -e .
-	pip install -r requirements.txt
+	python -m pip install -e .
+	python -m pip install -r requirements.txt
 
 run:  ## Run the sales agent application
 	python sales_agent/main.py
